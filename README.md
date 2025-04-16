@@ -1,10 +1,10 @@
 # Enhancing Contrastive Learning Inspired by the Philosophy of “the Blind Men and the Elephant”
 
-This is a PyTorch implementation of the JointCrop paper (AAAI 2025). The code is mainly modified from [MoCo v3](https://github.com/facebookresearch/moco-v3).
+This is a PyTorch implementation of the [JointCrop paper (AAAI 2025)](https://ojs.aaai.org/index.php/AAAI/article/view/34425). The code is mainly modified from [MoCo v3](https://github.com/facebookresearch/moco-v3).
 
 ## Appendix of JointCrop
 
-Due to AAAI's page limit, we have supplemented [the appendix of JointCrop](appendix.pdf) within the code repository.
+Due to AAAI's page limit, You can refer to the [arxiv version](https://arxiv.org/abs/2412.16522) for the appendix.
 
 ## Preparing the environment, code and dataset
 
@@ -82,5 +82,14 @@ python main_lincls.py \
 </tbody></table>
 
 ## Citation
-
-To be added after publication.
+```
+@inproceedings{zhang2025enhancing,
+  title={Enhancing Contrastive Learning Inspired by the Philosophy of “The Blind Men and the Elephant”},
+  author={Zhang, Yudong and Xie, Ruobing and Chen, Jiansheng and Sun, Xingwu and Kang, Zhanhui and Wang, Yu},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={21},
+  pages={22659--22667},
+  year={2025}
+}
+```

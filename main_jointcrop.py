@@ -411,7 +411,7 @@ def main_worker(gpu, ngpus_per_node, args):
     train_dataset = datasets.ImageFolder(
         traindir,
         moco.loader.TwoCropsTransform_JointCrop(
-            transforms.Compose(augmentation1), transforms.Compose(augmentation2)
+            transforms.Compose(augmentation1), transforms.Compose(augmentation2), (args.crop_min, 1.0)
         ),
     )
 

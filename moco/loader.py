@@ -140,10 +140,10 @@ class JointCrop(transforms.RandomResizedCrop):
 class TwoCropsTransform_JointCrop:
     """Take two random crops of one image"""
 
-    def __init__(self, base_transform1, base_transform2):
+    def __init__(self, base_transform1, base_transform2, scale):
         self.base_transform1 = base_transform1
         self.base_transform2 = base_transform2
-        self.base_transform = JointCrop(size=224)
+        self.base_transform = JointCrop(size=224, scale=scale)
 
     def __call__(self, x):
         im1, im2 = self.base_transform(x)
