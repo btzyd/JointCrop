@@ -60,7 +60,7 @@ class JointCrop(transforms.RandomResizedCrop):
         flag1 = False
         flag2 = False
 
-        log_scale = torch.log(torch.tensor(float(scale[1]) / float(scale[0]) - 0.01))
+        log_scale = torch.log(torch.tensor(float(scale[1]) / float(scale[0]) - 0.1))
 
         # JointCrop 0 -> Uniform distribution
         log_scale_sample = torch.empty(1).uniform_(-log_scale, log_scale)
